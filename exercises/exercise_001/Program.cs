@@ -1,10 +1,38 @@
-﻿namespace exercise_001
+using Sistema_Barbaro.Sistema_Barbaro;
+using System;
+
+namespace Sistema_Barbaro
 {
-    internal class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Classe barbaro1 = new Classe
+            {
+                Nome = "Cleiton Barbaro",              
+            };
+
+            barbaro1.Status();
+          
+
+            Classe barbaro2 = new Classe
+            {
+                Nome = "Jeferson Barbaro",
+
+            };
+
+            barbaro2.Status();
+
+            barbaro1.LevelUP();
+            barbaro1.Atacar(barbaro2);
+
+            barbaro2.LevelUP();
+            barbaro2.Revigorar();
+
+
+
+           
         }
+
     }
 }
